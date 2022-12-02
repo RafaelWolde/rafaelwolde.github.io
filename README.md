@@ -7,8 +7,9 @@
 </head>
 <body>
   <h1>
-  RAFAEL WOLDIE REMOTE
+  RAFAEL WOLDIE 
  </h1>
+ <h2>Personal Website</h2>
 <a href="./typinggamerafael.html">Typing game demo.</a>
 </body>
 </html>
