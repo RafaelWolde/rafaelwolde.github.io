@@ -85,10 +85,62 @@ h1.home::after{
     left: 0;
 }
 
-section{
-    align-items: flex-end;
+section#home{
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
+section#projects{
+    gap: 3rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.contain{
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px 0px black;
+    padding: .5em 1em;
+    height: fit-content;
+}
+.thumbnail{
+    width: 100%;
+    position: relative;
+
+}
+.thumbnail img{
+    width: 100%;
+}
+div.description{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    opacity: 0%;
+}
+.title{
+    margin: 5px 0;
+}
+
+div.description:hover{
+    color: wheat;
+    opacity: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mid-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-mid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
