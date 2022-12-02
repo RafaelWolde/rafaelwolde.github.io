@@ -6,7 +6,6 @@
   <title>RAFAEL WOLDIE</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>
