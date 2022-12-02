@@ -1,4 +1,4 @@
 <h1>
-  WELL COME TO MY PERSONAL PROJECT SITE
+  RAFAEL WOLDIE
  </h1>
 <a href="./typinggamerafael.html">Typing game demo.</a>
