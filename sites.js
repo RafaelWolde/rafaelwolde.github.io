@@ -1,6 +1,6 @@
 const sitesList = [
-{ title: 'First Deployed React App', relativePath: './sites/react/index.html', description: '"This Is An App Which will be deployed soon."'}, 
-{ title: 'RAFAEL WOLDIE', relativePath: './index.html', description: '"This Is MY Github Pages Home page"'}, 
+    { title: 'First Deployed React App', relativePath: './sites/react/index.html', description: '"This Is An App Which will be deployed soon."' },
+    { title: 'RAFAEL WOLDIE', relativePath: './index.html', description: '"This Is MY Github Pages Home page"' },
 ]
 
 function GetPage(title, relativePath, description) {
