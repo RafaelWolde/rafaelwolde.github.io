@@ -9,7 +9,7 @@ foreach ($file in $files) {
     $fileContent = (Get-Content $file)
     $pattern = "<title>(.*?)</title>"
     $title = [regex]::Match($fileContent, $pattern).Groups[1].Value
-    $pattern = '<meta name="description" content=(.*?)>'
+    $pattern = '<meta name="description" content="(.*?)">'
     $description = [regex]::Match($fileContent, $pattern).Groups[1].Value
     $relativePath = (Resolve-Path -Relative $file)
     $relativePathChange = $relativePath.replace('\', '/')

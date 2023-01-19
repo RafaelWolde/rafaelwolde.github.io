@@ -23,5 +23,9 @@ function GetPage(title, relativePath, description) {
 const projectsSection = document.getElementById('projects')
 
 for (const site of sitesList) {
+    if (site.relativePath == './index.html') {
+        console.warn("Recursive I Frame.")
+        continue;
+    }
     projectsSection.insertAdjacentHTML('beforeend', GetPage(site.title, site.relativePath, site.description))
 }
