@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RAFAEL WOLDIE</title>
+  <meta name="description" content="This Is MY Github Pages Home page">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -40,34 +41,34 @@
     </h2>
   </section>
   <section id="projects" class="center-mid">
-    <div class="contain">
+    <div class="project contain">
       <p class="title">
-        Project Name
+        Typing Practice Game
       </p>
       <div class="thumbnail">
-        <img src="images/typeracer_thumbnail.PNG" alt="">
+        <div class="iframe_container">
+          <iframe src="./typinggamerafael.html" frameborder="0"></iframe>
+        </div>
         <div class="description mid-center">
           <p>
+            This Page lets you write texts with different settings and measure your writing speed
+            in wpm. I made this app because I didn't want to wait for other websites to load their page
+            over the internet just to practice typing.
           </p>
         </div>
       </div>
-      <a href="typinggamerafael.html" class="link">Go</a>
+      <a href="typinggamerafael.html" class="link"></a>
     </div>
-    <div class="contain">
-      <p class="title">
-        Project Name
-      </p>
-      <div class="thumbnail">
-        <img src="images/typeracer_thumbnail.PNG" alt="">
-        <div class="description mid-center">
-          <p>
-          </p>
-        </div>
-      </div>
-      <a href="typinggamerafael.html" class="link">Go</a>
-    </div>
+
   </section>
   <script src="main.js"></script>
+  <script src="sites.js"></script>
+  <script>
+    site_links = document.querySelectorAll('a.link')
+    for (const site of site_links) {
+      site.textContent = "VISIT PAGE"
+    }
+  </script>
 </body>
 
 </html>

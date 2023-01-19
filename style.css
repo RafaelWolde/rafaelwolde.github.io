@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 :root{
@@ -95,6 +95,8 @@ section#projects{
     gap: 3rem;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contain{
@@ -109,8 +111,11 @@ section#projects{
     position: relative;
 
 }
-.thumbnail img{
-    width: 100%;
+.iframe_container{
+    height: 300px;
+}
+.iframe_container > iframe{
+    height: 100%;
 }
 div.description{
     height: 100%;
