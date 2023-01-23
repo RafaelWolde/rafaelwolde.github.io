@@ -1,0 +1,208 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Multi Step Form</title>
+  <meta name="description" content="This is a frontend development challenge 
+  from frontend mentor and this is a multi step form with responsive layout." </head>
+  <link rel="stylesheet" href="/css/style.css">
+
+<body>
+
+  <header>
+    <div class="dotted_nav">
+      <div class="button_container">
+        <div class="dot_button_container">
+          <div class="dot_button selected button">1</div>
+          <div class="dot_button_text_container">
+            <p>step 1</p>
+            <p>Your Info</p>
+          </div>
+        </div>
+        <div class="dot_button_container">
+          <div class="dot_button button">2</div>
+          <div class="dot_button_text_container">
+            <p>step 2</p>
+            <p>Select plan</p>
+          </div>
+        </div>
+        <div class="dot_button_container">
+          <div class="dot_button button">3</div>
+          <div class="dot_button_text_container">
+            <p>step 3</p>
+            <p>add-ons</p>
+          </div>
+        </div>
+        <div class="dot_button_container">
+          <div class="dot_button button">4</div>
+          <div class="dot_button_text_container">
+            <p>step 4</p>
+            <p>Summary</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="personal_info" class="selected">
+      <h1 class="title">Personal Info</h1>
+      <p class="guide_text light_font">Please provide your name,
+        email address, and phone number.</p>
+      <div class="form">
+        <form action="">
+          <div class="input_field_container">
+            <label for="firstname">Name</label>
+            <input type="text" name="first_name" id="firstname" placeholder="e.g. Stephen King">
+          </div>
+          <div class="input_field_container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="e.g.stephenking@lorem.com">
+          </div>
+          <div class="input_field_container">
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="e.g. +1 234 567 890">
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="plan">
+      <h1 class="title">Select Your Plan</h1>
+      <p class="guide_text light_font">You have the option of monthly or hidden billing.
+      </p>
+      <div class="selection-list">
+        <div class="selection-item selected button">
+          <img src="assets/images/icon-arcade.svg" alt="" class="selection-item--image">
+          <div class="selection-item--info">
+            <h3 class="title">Arcade</h3>
+            <p class="price light_font monthly">$9/mo</p>
+            <p class="price light_font hidden">$90/yr <br><span>2 months free</span></p>
+
+          </div>
+        </div>
+        <div class="selection-item button">
+          <img src="assets/images/icon-advanced.svg" alt="" class="selection-item--image">
+          <div class="selection-item--info">
+            <h3 class="title">Advanced</h3>
+            <p class="price light_font">$12/mo</p>
+            <p class="price light_font hidden">$120/yr <br><span>2 months free</span></p>
+          </div>
+        </div>
+        <div class="selection-item button">
+          <img src="assets/images/icon-pro.svg" alt="" class="selection-item--image">
+          <div class="selection-item--info">
+            <h3 class="title">Por</h3>
+            <p class="price light_font">$15/mo</p>
+            <p class="price light_font hidden">$150/yr <br><span>2 months free</span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="radio_box">
+        <span>Monthly</span>
+        <div class="radio button" id=""></div><span>Yearly</span>
+      </div>
+    </section>
+    <section id="plan" class="hidden">
+      <h1 class="title">Pick add-ons</h1>
+      <p class="guide_text light_font">
+        Add-ons help enhance your gaming experience.
+      </p>
+      <div class="selections-list">
+        <div class="selections-item button">
+          <div class="check-box centered">
+            <img src="./assets/images/icon-checkmark.svg" alt="">
+          </div>
+          <div class="item-info1">
+            <p class="title">Online Service</p>Thanks
+            <p class="description light_font">
+              Access to multiplayer games
+            </p>
+          </div>
+          <p class="item-fee">
+            +$10/yr
+          </p>
+        </div>
+        <div class="selections-item button">
+          <div class="check-box centered">
+            <img src="./assets/images/icon-checkmark.svg" alt="">
+          </div>
+          <div class="item-info1">
+            <p class="title">Larger storage</p>
+            <p class="description light_font">
+              Extra 1TB of coulde save
+            </p>
+          </div>
+          <p class="item-fee">
+            +$20/yr
+          </p>
+        </div>
+        <div class="selections-item button">
+          <div class="check-box centered">
+            <img src="./assets/images/icon-checkmark.svg" alt="">
+          </div>
+          <div class="item-info1">
+            <p class="title">Customized profile</p>
+            <p class="description light_font">
+              Custom theme on your profile
+            </p>
+          </div>
+          <p class="item-fee">
+            +$20/yr
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="confirm">
+      <h1 class="title">Pick add-ons</h1>
+      <p class="guide_text light_font">
+        Add-ons help enhance your gaming experience.
+      </p>
+      <div class="summary">
+        <div class="arcade">
+          <div class="plan">
+            <h3> Arcade(Monthly)
+            </h3>
+            <p><a href="#change" id="change">Change</a></p>
+          </div>
+          <p class="final-price">9$/mo</p>
+        </div>
+        <hr id="separator">
+        <div class="extras">
+          <div class="online-service">
+            <p class="title">Online Service</p>
+            <p class="extra-price">+$1/mo</p>
+          </div>
+          <div class="large-storage">
+            <p class="tit">Large Stroage</p>
+            <p class="extra-price">+$2/mo</p>
+          </div>
+        </div>
+      </div>
+      <div class="total">
+        <p class="description">Total (per month)</p>
+        <p class="total-price">+$12/mo</p>
+      </div>
+    </section>
+    <section id="finish">
+      <div class="icon"><img src="./assets/images/icon-thank-you.svg" alt=""></div>
+      <h1 class="title">Thank You!</h1>
+      <p class="description light_font">Thanks for confirming your subscription! <br>
+        We hope you have fun using our platform. If you ever need support, please feel free to email us at
+        support@loremgaming.com
+      </p>
+    </section>
+  </main>
+  <footer>
+    <div class="go_back_button button">
+      &lt;&lt; Go Back
+    </div>
+    <div class="next_step_button button">
+      Next Step
+    </div>
+  </footer>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
