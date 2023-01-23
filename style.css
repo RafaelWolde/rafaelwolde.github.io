@@ -105,6 +105,8 @@ section#projects{
     box-shadow: 2px 2px 4px 0px black;
     padding: .5em 1em;
     height: fit-content;
+    background: white;
+    gap: 1rem;
 }
 .thumbnail{
     width: 100%;
@@ -148,4 +150,12 @@ div.description:hover{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.project{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.thumbnail{
+    box-shadow: 1px 1px 5px 0px black inset;
 }

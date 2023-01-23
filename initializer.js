@@ -7,7 +7,7 @@ function GetPage(title, relativePath, description) {
             </p>
             <div class="thumbnail">
                 <div class="iframe_container">
-                    <iframe src="${relativePath}" frameborder="0"></iframe>
+                    <iframe src="${relativePath}" frameborder="0" scrolling="no" style="width:100%; height:100%;"></iframe>
                 </div>
                 <div class="site_description description mid-center">
                     <p>
