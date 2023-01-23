@@ -1,5 +1,5 @@
 const sitesList = [
-{ title: 'Multi Step Form', relativePath: './sites/plain/multi-step-form-main/index.html', description: 'This is a frontend development challenge    from frontend mentor and this is a multi step form with responsive layout." </head>   <link rel="stylesheet" href="/css/style.css'}, 
+{ title: 'Multi Step Form', relativePath: './sites/plain/multi-step-form-main/index.html', description: 'This is a frontend development challenge    from frontend mentor and this is a multi step form with responsive layout.'}, 
 { title: 'Frontend Mentor | QR code component', relativePath: './sites/plain/qr-code-component-main/index.html', description: ''}, 
 { title: 'First Deployed React App', relativePath: './sites/react/index.html', description: 'This Is An App Which will be deployed soon.'}, 
 { title: 'RAFAEL WOLDIE', relativePath: './index.html', description: 'This Is MY Github Pages Home page'}, 
