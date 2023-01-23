@@ -29,3 +29,12 @@ for (const site of sitesList) {
     }
     projectsSection.insertAdjacentHTML('beforeend', GetPage(site.title, site.relativePath, site.description))
 }
+
+const projectList = document.getElementsByClassName('project')
+
+for (const project of projectList) {
+    project.addEventListener('click', goToProject)
+}
+function goToProject() {
+    this.querySelector('a.link').click()
+}
