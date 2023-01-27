@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header></header>
+  <main>
+    <div class="app">
+      <div class="action">
+        <a role="button" href="#" class="action__notification notification">Notifications <span
+            class="notification__count">3</span></a>
+        <a role="button" href="#" class="action__mark-as-read"> Mark all as read</a>
+      </div>
+
+      <div class="messages">
+        <div class="messages__message message" read="false">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="profile avatar image" class="message__avatar">
+          <div class="message__details details">
+            <p class="message__texts">
+              <span class="message__sender">Mark Webber</span>
+              <span class="message__reaction">reacted to your recent post</span>
+              <span class="message__extra">My first tournament today!</span>
+            </p>
+            <p class="message__date">1m ago</p>
+          </div>
+        </div>
+        <div class="messages__message message" read="false">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="profile avatar image" class="message__avatar">
+          <div class="message__details details">
+            <p class="message__texts">
+              <span class="message__sender">Angela Gray</span>
+              <span class="message__reaction">followed you</span>
+              <span class="message__extra"></span>
+            </p>
+            <p class="message__date" role="">5m ago</p>
+          </div>
+        </div>
+        <div class="messages__message message" read="false">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="profile avatar image" class="message__avatar">
+          <div class="message__details details">
+            <p class="message__texts">
+              <span class="message__sender"> Jacob Thompson
+              </span>
+              <span class="message__reaction">has joined your group </span>
+              <span class="message__extra" group-name>Chess Club</span>
+            </p>
+            <p class="message__date">1 day ago</p>
+
+          </div>
+        </div>
+        <div class="messages__message message" read="false">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="profile avatar image" class="message__avatar">
+          <div class="message__details details">
+            <p class="message__texts">
+              <span class="message__sender">
+                Rizky Hasanuddin
+              </span>
+              <span class="message__reaction"> sent you a private message</span>
+              <span class="message__extra"></span>
+            </p>
+            <p class="message__date">5 days ago</p>
+            <p class="message__content" role="text">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+        <div class="messages__message message" read="false">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="profile avatar image" class="message__avatar">
+          <div class="message__details details">
+            <p class="message__texts">
+              <span class="message__sender"> Kimberly Smith </span>
+              <span class="message__reaction">commented on your picture</span>
+              <span class="message__extra"></span>
+            </p>
+            <p class="message__date">1 week ago</p>
+          </div>
+          <img src="./assets/images/image-chess.webp" alt="picture where the user commented"
+            class="message__comment-img">
+        </div>
+        <div class="messages__message message" read="false">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="profile avatar image" class="message__avatar">
+          <div class="message__details details">
+            <p class="message__texts">
+              <span class="message__sender">
+                Nathan Peterson
+              </span>
+              <span class="message__reaction">reacted to your recent post</span>
+              <span class="message__extra">5 end-game strategies to increase your win rate</span>
+              <span class="message_mark"></span>
+            </p>
+            <p class="message__date">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="messages__message message" read="false">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="profile avatar image" class="message__avatar">
+          <div class="message__details details">
+            <p class="message__texts">
+              <span class="message__sender"> Anna Kim</span>
+              <span class="message__reaction">left the group </span>
+              <span class="message__extra" group-name> Chess Club</span>
+            </p>
+            <p class="message__date">
+              2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  <!-- Notifications 3
+
+  -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
