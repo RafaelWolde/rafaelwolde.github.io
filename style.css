@@ -7,7 +7,7 @@
 }
 
 :root{
-    --secondary-color: rgb(37, 126, 234);
+    --secondary-color: rgba(37, 66, 102, 0.9);
 }
 
 body{
@@ -157,7 +157,7 @@ div.description:hover{
     flex-direction: column;
 }
 .thumbnail{
-    box-shadow: 1px 1px 5px 0px black inset;
+    box-shadow: 1px 1px 10px 5px gray inset;
 }
 
 @media screen and (max-width: 620px) {
