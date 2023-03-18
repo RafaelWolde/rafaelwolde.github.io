@@ -1,11 +1,12 @@
 const sitesList = [
-{ title: 'Multi Step Form', relativePath: './sites/plain/multi-step-form-main/index.html', description: 'This is a frontend development challenge    from frontend mentor and this is a multi step form with responsive layout.'}, 
-{ title: 'NEWS HOMEPAGE CHALLENGE', relativePath: './sites/plain/news-homepage-main/index.html', description: '   This is My third challenge on frontend mentor. This is a homepage for a news website.'}, 
-{ title: 'Frontend Mentor | Notifications page', relativePath: './sites/plain/notifications-page-main/index.html', description: ''}, 
-{ title: 'Frontend Mentor | Product preview card component', relativePath: './sites/plain/product-preview-card-component-main/index.html', description: 'This is a FrontendMentor challenge Which I build using React.'}, 
-{ title: 'Frontend Mentor | QR code component', relativePath: './sites/plain/qr-code-component-main/index.html', description: 'This is my very first challenge    from frontendMentor which is a QRCode scanner card.'}, 
-{ title: 'First Deployed React App', relativePath: './sites/react/index.html', description: 'This Is An App Which will be deployed soon.'}, 
-{ title: 'RAFAEL WOLDIE', relativePath: './index.html', description: 'This Is MY Github Pages Home page'}, 
+    { title: 'Multi Step Form', relativePath: './sites/plain/multi-step-form-main/index.html', description: 'This is a frontend development challenge    from frontend mentor and this is a multi step form with responsive layout.' },
+    { title: 'NEWS HOMEPAGE CHALLENGE', relativePath: './sites/plain/news-homepage-main/index.html', description: '   This is My third challenge on frontend mentor. This is a homepage for a news website.' },
+    { title: 'Frontend Mentor | Notifications page', relativePath: './sites/plain/notifications-page-main/index.html', description: 'Frontend Mentor challenge for newbies   a single page for notifications' },
+    { title: 'Frontend Mentor | Product preview card component', relativePath: './sites/plain/product-preview-card-component-main/index.html', description: 'This is a FrontendMentor challenge Which I build using React.' },
+    { title: 'Frontend Mentor | QR code component', relativePath: './sites/plain/qr-code-component-main/index.html', description: 'This is my very first challenge    from frontendMentor which is a QRCode scanner card.' },
+    { title: 'APP | Frontend Mentor intro section with dropdown', relativePath: './sites/react/intro-section-with-dropdown/static/index.html', description: 'This is a frontend mentor challenge      it is built using React.js' },
+    { title: 'First Deployed React App', relativePath: './sites/react/index.html', description: 'This Is An App Which will be deployed soon.' },
+    { title: 'RAFAEL WOLDIE', relativePath: './index.html', description: 'This Is MY Github Pages Home page' },
 ]
 
 function GetPage(title, relativePath, description) {
