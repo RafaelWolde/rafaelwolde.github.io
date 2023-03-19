@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,700;1,800&display=swap');
+
+    @font-face {
+      font-family: HankenGrotesk-Bold;
+      src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    }
+
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: "HankenGrotesk-Bold";
+    }
+
+
+    body {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-image: url(./design/desktop-design.jpg); */
+      background-size: cover;
+      /* overflow: hidden; */
+      min-height: 100vh;
+    }
+
+
+
+    #root {
+      display: block;
+      width: 100%;
+      height: 1080px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .reference {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0px;
+      z-index: -1;
+    }
+
+    .app {
+      height: 512px;
+      width: 736px;
+      border-radius: 30px;
+      display: flex;
+      box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .app>div {
+      width: 0;
+      flex-grow: 1;
+    }
+
+    .result {
+
+      height: 100%;
+      border-radius: 30px;
+      padding-top: 6px;
+      background-image: var(--bg-gradient);
+
+
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+      color: white;
+
+    }
+
+    .result>.title {
+      font-size: 24px;
+      color: var(--Light-lavender);
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    .result_container {
+      height: 200px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: var(--circle-gradient);
+    }
+
+    .result_container>h1 {
+      font-size: 53pt;
+    }
+
+    .result_container>h1>span {
+      display: block;
+      font-size: 1rem;
+      color: var(--Light-lavender)
+    }
+
+    h2 {
+      font-size: 23pt;
+
+    }
+
+    .last {
+      width: 260px;
+      font-size: 14pt;
+      color: var(--Light-lavender);
+      transform: translateY(-1.26rem);
+
+    }
+
+
+    .summary {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-right: 4rem;
+      height: 512px;
+      flex-direction: column;
+      padding: 40px;
+      font-weight: 700;
+      max-width: 50%;
+    }
+
+    .measure {
+      display: flex;
+      width: 290px;
+      border-radius: 10px;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 14pt;
+      padding: 15px 16px;
+      margin-bottom: 18px;
+    }
+
+    .summary>p.title {
+      font-size: 16pt;
+      color: black;
+      margin-bottom: 30px;
+    }
+
+
+    .measure_score {
+      margin-left: auto;
+    }
+
+    button.primary {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 1.0rem;
+      margin-top: 20px;
+      background-color: var(--Dark-gray-blue);
+      border-radius: 50px;
+      color: var(--White);
+      font-size: 16pt;
+    }
+
+    button:hover {
+      background: var(--Cobalt-blue);
+    }
+
+
+    div.measure:nth-child(2)>.measure_text {
+      color: var(--Light-red);
+    }
+
+    div.measure:nth-child(3)>.measure_text {
+      color: var(--Orangey-yellow);
+    }
+
+    div.measure:nth-child(4)>.measure_text {
+      color: var(--Green-teal);
+    }
+
+    div.measure:nth-child(5)>.measure_text {
+      color: var(--Cobalt-blue);
+    }
+
+    div.measure>p>span:nth-child(2) {
+      color: var(--Light-lavender);
+    }
+
+    div.measure:nth-child(2) {
+      background: var(--Light-red-faded);
+    }
+
+    div.measure:nth-child(3) {
+      background: var(--Orangey-yellow-faded);
+    }
+
+    div.measure:nth-child(4) {
+      background: var(--Green-teal-faded);
+    }
+
+    div.measure:nth-child(5) {
+      background: var(--Cobalt-blue-faded);
+    }
+
+    :root {
+      --Light-red: hsl(0, 100%, 67%);
+      --Orangey-yellow: hsl(39, 100%, 56%);
+      --Green-teal: hsl(166, 100%, 37%);
+      --Cobalt-blue: hsl(234, 85%, 45%);
+
+      --Light-red-faded: hsla(0, 100%, 67%, 10%);
+      --Orangey-yellow-faded: hsla(39, 100%, 56%, 10%);
+      --Green-teal-faded: hsla(166, 100%, 37%, 10%);
+      --Cobalt-blue-faded: hsla(234, 85%, 45%, 10%);
+
+      --Light-slate-blue-background: hsl(252, 100%, 67%);
+      --Light-royal-blue-background: hsl(241, 81%, 54%);
+      --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+      --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+      --White: hsl(0, 0%, 100%);
+      --Pale-blue: hsl(221, 100%, 96%);
+      --Light-lavender: hsl(241, 100%, 89%);
+      --Dark-gray-blue: hsl(224, 30%, 27%);
+
+      --bg-gradient: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+      --circle-gradient: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    Reference image for design
+    <img src="./design/active-states.jpg" alt="" class="reference">
+  -->
+
+  <main>
+    <div id="root">
+      <div class="app">
+        <div class="result">
+          <p class="title">Your result</p>
+          <div class="result_container">
+            <h1>76
+              <span>of 100</span>
+            </h1>
+          </div>
+          <h2>Great</h2>
+          <p class="last">You scored
+            higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <div class="summary">
+          <p class="title">Summary</p>
+          <div class="measure">
+            <img src="./assets/images/icon-reaction.svg" alt="" class="measure_ico">
+            <p class="measure_text">Reaction</p>
+            <p class="measure_score">
+              <span class="umprasand">80</span>
+              <span class="dividend">/ 100</span>
+            </p>
+          </div>
+          <div class="measure">
+            <img src="./assets/images/icon-memory.svg" alt="" class="measure_ico">
+            <p class="measure_text">Memory</p>
+            <p class="measure_score">
+              <span class="umprasand">92</span>
+              <span class="dividend">/ 100</span>
+            </p>
+          </div>
+          <div class="measure">
+            <img src="./assets/images/icon-verbal.svg" alt="" class="measure_ico">
+            <p class="measure_text">Verbal</p>
+            <p class="measure_score">
+              <span class="umprasand">61</span>
+              <span class="dividend">/ 100</span>
+            </p>
+          </div>
+          <div class="measure">
+            <img src="./assets/images/icon-visual.svg" alt="" class="measure_ico">
+            <p class="measure_text">Visual</p>
+            <p class="measure_score">
+              <span class="umprasand">72</span>
+              <span class="dividend">/ 100</span>
+            </p>
+          </div>
+          <button class="primary">
+            Continue
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script>
+    const bd = document.body;
+
+  </script>
+</body>
+
+</html>
+
+<!-- 
+
+    Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken these tests.
+  
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+ -->
